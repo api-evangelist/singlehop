@@ -1,7 +1,26 @@
 aid: singlehop
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/singlehop.png
 name: SingleHop
-description: SingleHop is a company surfaced as a portfolio company of battery-ventures and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: SingleHop was a Chicago-based managed hosting, dedicated server, and
+  cloud infrastructure provider, historically known for its LEAP customer control
+  panel and API. It was surfaced as a portfolio company of Battery Ventures and added
+  to the API Evangelist network as a stub for enrichment. The SingleHop brand was
+  acquired by INAP (Internap) in 2016 and has since been fully absorbed; the
+  singlehop.com domain now HTTP 301-redirects to horizoniq.com (HorizonIQ, the
+  successor infrastructure brand). No independent SingleHop developer portal, API
+  documentation, or OpenAPI surface remains publicly reachable under the SingleHop
+  brand.
 url: https://raw.githubusercontent.com/api-evangelist/singlehop/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +28,34 @@ x-backed-by:
 - battery-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-successor: horizoniq
+x-successor-url: https://www.horizoniq.com/
+x-observed:
+  date: '2026-07-21'
+  note: singlehop.com and www.singlehop.com return HTTP 301 to https://www.horizoniq.com/;
+    all probed .well-known endpoints (security.txt, openid-configuration,
+    oauth-authorization-server, api-catalog, ai-plugin.json) return 404; the served
+    /llms.txt is HorizonIQ's marketing llms.txt (Yoast-generated), not a SingleHop
+    artifact, so it was intentionally not wired.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Hosting
+- Cloud
+- Infrastructure
+- Managed Hosting
+- Dedicated Servers
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 0
+  pass: local-v1
