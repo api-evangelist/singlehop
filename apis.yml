@@ -38,7 +38,7 @@ x-observed:
     oauth-authorization-server, api-catalog, ai-plugin.json) return 404; the served
     /llms.txt is HorizonIQ's marketing llms.txt (Yoast-generated), not a SingleHop
     artifact, so it was intentionally not wired.
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-21'
 tags:
